@@ -278,6 +278,11 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
+    android.hardware.audio.common-V3-ndk \
+    android.hardware.audio.core-V2-ndk \
+    android.hardware.audio.core.sounddose-V2-ndk \
+    android.hardware.audio.effect-V2-ndk \
+    android.hardware.bluetooth.audio-V4-ndk \
     android.hardware.bluetooth.audio-impl_prebuilt \
     android.media.audio.common.types-V6-ndk \
     btaudio_offload_if \
