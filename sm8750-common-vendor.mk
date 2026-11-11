@@ -734,6 +734,26 @@ PRODUCT_PACKAGES += \
     qtiPeripheralMgr \
     qtiril-utils \
     qtiwakelock \
+    libVppAisQnnHtp \
+    libVppFrcQnnHtp \
+    libdpp_engine_skel \
+    libdspCV_skel \
+    libevadsp \
+    libfastcvadsp \
+    libfastcvdsp_skel \
+    libmobilenet_dsp_frc \
+    libmobilenet_dsp_frc_networks \
+    libnsp_ipc_cdsp_skel \
+    libnspextensionsuperresolutionprovider \
+    libscveT2T_skel \
+    libvpp_ais \
+    libvpp_ais_networks \
+    libvpp_frc \
+    libvpp_gfrc_networks \
+    libvpp_svc_skel \
+    libvpp_vqa_networks \
+    libvpt_action_recognition \
+    libworker_pool \
     sensors.qsh \
     libbundleaidl \
     libdownmixaidl \
@@ -833,6 +853,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.syshealthmon-V1-ndk \
     vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk_platform \
     vendor.xiaomi.hardware.micharge-V2-ndk \
+    vendor_lib_rfsa_adsp_activity_napp_header \
+    vendor_lib_rfsa_adsp_activity_so \
+    vendor_lib_rfsa_adsp_chre_qsh_shim_so \
+    vendor_lib_rfsa_adsp_nearby_napp_header \
+    vendor_lib_rfsa_adsp_nearby_so \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imsvideocodec \
     lib-imsvt \
