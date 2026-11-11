@@ -40,7 +40,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.audio.common-V3-ndk",
+    name: "android.hardware.audio.common-V3-ndk_prebuilt",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -48,18 +48,25 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.common-V3-ndk.so",
+                "proprietary/vendor/lib64/android.hardware.audio.common-V3-ndk_prebuilt.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.media.audio.common.types-V6-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.audio.core-V2-ndk",
+    name: "android.hardware.audio.core-V2-ndk_prebuilt",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -67,18 +74,30 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.core-V2-ndk.so",
+                "proprietary/vendor/lib64/android.hardware.audio.core-V2-ndk_prebuilt.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.media.audio.common.types-V6-ndk",
+                "android.hardware.audio.effect-V2-ndk_prebuilt",
+                "android.hardware.audio.core.sounddose-V2-ndk_prebuilt",
+                "android.hardware.audio.common-V3-ndk_prebuilt",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.audio.core.sounddose-V2-ndk",
+    name: "android.hardware.audio.core.sounddose-V2-ndk_prebuilt",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -86,18 +105,25 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.core.sounddose-V2-ndk.so",
+                "proprietary/vendor/lib64/android.hardware.audio.core.sounddose-V2-ndk_prebuilt.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.media.audio.common.types-V6-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.audio.effect-V2-ndk",
+    name: "android.hardware.audio.effect-V2-ndk_prebuilt",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -105,18 +131,28 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.effect-V2-ndk.so",
+                "proprietary/vendor/lib64/android.hardware.audio.effect-V2-ndk_prebuilt.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.media.audio.common.types-V6-ndk",
+                "android.hardware.audio.common-V3-ndk_prebuilt",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.bluetooth.audio-V4-ndk",
+    name: "android.hardware.bluetooth.audio-V4-ndk_prebuilt",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -124,12 +160,21 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.bluetooth.audio-V4-ndk.so",
+                "proprietary/vendor/lib64/android.hardware.bluetooth.audio-V4-ndk_prebuilt.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.audio.common-V3-ndk_prebuilt",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -146,7 +191,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/android.hardware.bluetooth.audio-impl_prebuilt.so",
             ],
             shared_libs: [
-                "android.hardware.bluetooth.audio-V4-ndk",
+                "android.hardware.bluetooth.audio-V4-ndk_prebuilt",
                 "libbase",
                 "libbinder_ndk",
                 "libcutils",
@@ -202,7 +247,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/btaudio_offload_if.so",
             ],
             shared_libs: [
-                "android.hardware.bluetooth.audio-V4-ndk",
+                "android.hardware.bluetooth.audio-V4-ndk_prebuilt",
                 "libbase",
                 "libcutils",
                 "libfmq",
@@ -525,7 +570,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio-impl-qti.so",
             ],
             shared_libs: [
-                "android.hardware.bluetooth.audio-V4-ndk",
+                "android.hardware.bluetooth.audio-V4-ndk_prebuilt",
                 "libbase",
                 "libbinder_ndk",
                 "libcutils",
@@ -737,7 +782,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/audio.bluetooth_qti.default.so",
             ],
             shared_libs: [
-                "android.hardware.bluetooth.audio-V4-ndk",
+                "android.hardware.bluetooth.audio-V4-ndk_prebuilt",
                 "libbluetooth_audio_session_qti_2_1",
                 "libbluetooth_audio_session_qti",
                 "libbluetooth_audio_session_aidl_qti",
@@ -3000,7 +3045,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libbluetooth_audio_session_aidl_prebuilt.so",
             ],
             shared_libs: [
-                "android.hardware.bluetooth.audio-V4-ndk",
+                "android.hardware.bluetooth.audio-V4-ndk_prebuilt",
                 "libaconfig_storage_read_api_cc",
                 "android.hardware.bluetooth.audio@2.0",
                 "android.hardware.bluetooth.audio@2.1",
@@ -3037,7 +3082,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libbluetooth_audio_session_aidl_qti.so",
             ],
             shared_libs: [
-                "android.hardware.bluetooth.audio-V4-ndk",
+                "android.hardware.bluetooth.audio-V4-ndk_prebuilt",
                 "android.hardware.bluetooth.audio@2.0",
                 "android.hardware.bluetooth.audio@2.1",
                 "libbase",
@@ -12300,7 +12345,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libbase",
                 "libfmq",
-                "android.hardware.audio.core-V2-ndk",
+                "android.hardware.audio.core-V2-ndk_prebuilt",
                 "android.media.audio.common.types-V3-ndk",
                 "qti.video.utils.videobufferlayout",
                 "android.hardware.graphics.mapper@2.0",
@@ -13951,7 +13996,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/soundfx/libquasar.so",
             ],
             shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
+                "android.hardware.audio.effect-V2-ndk_prebuilt",
                 "android.hardware.common-V2-ndk",
                 "android.media.audio.common.types-V3-ndk",
                 "android.hardware.common.fmq-V1-ndk",
