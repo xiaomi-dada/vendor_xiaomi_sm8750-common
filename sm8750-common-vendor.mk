@@ -728,17 +728,17 @@ PRODUCT_PACKAGES += \
     qtiril-utils \
     qtiwakelock \
     sensors.qsh \
-    libbundleaidl_prebuilt \
-    libdownmixaidl_prebuilt \
-    libdynamicsprocessingaidl_prebuilt \
-    libloudnessenhanceraidl_prebuilt \
-    libqcompostprocbundle_prebuilt \
-    libqcomvisualizer_prebuilt \
-    libqcomvoiceprocessing_prebuilt \
+    libbundleaidl \
+    libdownmixaidl \
+    libdynamicsprocessingaidl \
+    libloudnessenhanceraidl \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
     libquasar \
-    libreverbaidl_prebuilt \
-    libvisualizeraidl_prebuilt \
-    libvolumelistener_prebuilt \
+    libreverbaidl \
+    libvisualizeraidl \
+    libvolumelistener \
     vendor.libdpmctmgr \
     vendor.libdpmfdmgr \
     vendor.libdpmframework \
