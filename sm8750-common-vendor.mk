@@ -365,6 +365,7 @@ PRODUCT_PACKAGES += \
     libagm \
     libagmclient \
     libagmipcservice \
+    libagmmixer \
     libar-acdb \
     libar-gpr \
     libar-gsl \
