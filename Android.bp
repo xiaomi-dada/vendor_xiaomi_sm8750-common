@@ -2927,7 +2927,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "libc++",
                 "libc",
                 "libm",
@@ -14007,7 +14007,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libaudioutils",
                 "liblog",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "libc++",
                 "libc",
                 "libm",
