@@ -13705,7 +13705,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libbundleaidl",
+    name: "libbundleaidl_prebuilt",
+    stem: "libbundleaidl",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -13744,7 +13745,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdownmixaidl",
+    name: "libdownmixaidl_prebuilt",
+    stem: "libdownmixaidl",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -13781,7 +13783,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdynamicsprocessingaidl",
+    name: "libdynamicsprocessingaidl_prebuilt",
+    stem: "libdynamicsprocessingaidl",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -13818,7 +13821,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libloudnessenhanceraidl",
+    name: "libloudnessenhanceraidl_prebuilt",
+    stem: "libloudnessenhanceraidl",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -13855,7 +13859,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqcompostprocbundle",
+    name: "libqcompostprocbundle_prebuilt",
+    stem: "libqcompostprocbundle",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -13890,7 +13895,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqcomvisualizer",
+    name: "libqcomvisualizer_prebuilt",
+    stem: "libqcomvisualizer",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -13925,7 +13931,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqcomvoiceprocessing",
+    name: "libqcomvoiceprocessing_prebuilt",
+    stem: "libqcomvoiceprocessing",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -13996,7 +14003,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libreverbaidl",
+    name: "libreverbaidl_prebuilt",
+    stem: "libreverbaidl",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -14033,7 +14041,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libvisualizeraidl",
+    name: "libvisualizeraidl_prebuilt",
+    stem: "libvisualizeraidl",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -14070,7 +14079,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libvolumelistener",
+    name: "libvolumelistener_prebuilt",
+    stem: "libvolumelistener",
     owner: "xiaomi",
     strip: {
         none: true,
