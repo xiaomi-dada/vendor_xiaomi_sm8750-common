@@ -1120,10 +1120,6 @@ PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
     system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
-    vendor_etc_hal_uuid_map_7_xml \
-    vendor_etc_hal_uuid_map_23_xml \
-    vendor_etc_hal_uuid_map_29_xml \
-    vendor_etc_hal_uuid_map_31_xml \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so

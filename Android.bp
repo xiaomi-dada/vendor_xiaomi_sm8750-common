@@ -22357,34 +22357,6 @@ install_symlink {
 }
 
 install_symlink {
-    name: "vendor_etc_hal_uuid_map_7_xml",
-    soc_specific: true,
-    installed_location: "etc/hal_uuid_map_7.xml",
-    symlink_target: "/vendor/etc/hal_uuid_map_config.xml",
-}
-
-install_symlink {
-    name: "vendor_etc_hal_uuid_map_23_xml",
-    soc_specific: true,
-    installed_location: "etc/hal_uuid_map_23.xml",
-    symlink_target: "/vendor/etc/hal_uuid_map_config.xml",
-}
-
-install_symlink {
-    name: "vendor_etc_hal_uuid_map_29_xml",
-    soc_specific: true,
-    installed_location: "etc/hal_uuid_map_29.xml",
-    symlink_target: "/vendor/etc/hal_uuid_map_config.xml",
-}
-
-install_symlink {
-    name: "vendor_etc_hal_uuid_map_31_xml",
-    soc_specific: true,
-    installed_location: "etc/hal_uuid_map_31.xml",
-    symlink_target: "/vendor/etc/hal_uuid_map_config.xml",
-}
-
-install_symlink {
     name: "vendor_lib64_libEGL_adreno_so",
     soc_specific: true,
     installed_location: "lib64/libEGL_adreno.so",
