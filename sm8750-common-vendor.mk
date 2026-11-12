@@ -405,7 +405,6 @@ PRODUCT_PACKAGES += \
     libcne \
     libcneapiclient \
     libcneoplookup \
-    libcneqmiutils \
     libconfigdb \
     libcpion \
     libcv_common \
@@ -498,7 +497,6 @@ PRODUCT_PACKAGES += \
     libminkipcbinder_vendor \
     libminksocket_vendor \
     libmisfpsop \
-    libmisight \
     libmisops \
     libmmosal_vendor \
     libmmrtpdecoder_vendor \
@@ -511,7 +509,6 @@ PRODUCT_PACKAGES += \
     libnicm_netlink \
     libnicm_recovery \
     libnicm_utils \
-    libnicm_vh \
     libnspdependencyservice \
     libnspdescriptorhandlerservice \
     libnspdiagservice \
@@ -622,8 +619,6 @@ PRODUCT_PACKAGES += \
     librcmask \
     libril-db \
     libril-legacy \
-    libril-qc-ltedirectdisc \
-    libril-qc-radioconfig \
     librilqmimiscservices \
     librpmb \
     libscveCommon \
@@ -641,7 +636,6 @@ PRODUCT_PACKAGES += \
     libsensorcal \
     libsensorslog \
     libshsc \
-    libslimclient \
     libsmemlog \
     libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
@@ -710,7 +704,6 @@ PRODUCT_PACKAGES += \
     libwms \
     libwqe \
     libxiaomi_qcril \
-    libxlog \
     libxml \
     libxpan_wifi_hal \
     libxtadapter \
@@ -912,8 +905,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qccvndhal@1.0 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
-    vendor.qti.ims.datachannelservice-V2-ndk \
-    vendor.qti.ims.datachannelservice-V3-ndk \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     vendor.qti.qccsyshal_aidl-V1-ndk \
@@ -922,7 +913,6 @@ PRODUCT_PACKAGES += \
     libaudioroute_ext \
     vendor.qti.gnss-V7-ndk \
     vendor.qti.gnss-service \
-    vendor.xiaomi.hardware.mediaeventgatherservice-V1-ndk \
     com.google.android.widevine.nonupdatable \
     CACertService \
     CneApp \
