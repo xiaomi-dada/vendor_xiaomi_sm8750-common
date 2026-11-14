@@ -52,7 +52,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libbinder_ndk",
-                "android.media.audio.common.types-V6-ndk",
+                "android.media.audio.common.types-V6-ndk_prebuilt",
                 "libc++",
                 "libc",
                 "libm",
@@ -78,7 +78,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libbinder_ndk",
-                "android.media.audio.common.types-V6-ndk",
+                "android.media.audio.common.types-V6-ndk_prebuilt",
                 "android.hardware.audio.effect-V2-ndk_prebuilt",
                 "android.hardware.audio.core.sounddose-V2-ndk_prebuilt",
                 "android.hardware.audio.common-V3-ndk_prebuilt",
@@ -109,7 +109,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libbinder_ndk",
-                "android.media.audio.common.types-V6-ndk",
+                "android.media.audio.common.types-V6-ndk_prebuilt",
                 "libc++",
                 "libc",
                 "libm",
@@ -135,7 +135,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libbinder_ndk",
-                "android.media.audio.common.types-V6-ndk",
+                "android.media.audio.common.types-V6-ndk_prebuilt",
                 "android.hardware.audio.common-V3-ndk_prebuilt",
                 "android.hardware.common-V2-ndk",
                 "android.hardware.common.fmq-V1-ndk",
@@ -211,7 +211,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.media.audio.common.types-V6-ndk",
+    name: "android.media.audio.common.types-V6-ndk_prebuilt",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -219,7 +219,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.media.audio.common.types-V6-ndk.so",
+                "proprietary/vendor/lib64/android.media.audio.common.types-V6-ndk_prebuilt.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -958,39 +958,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libc",
                 "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.alarm-impl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm-impl.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libhardware",
-                "libbase",
-                "vendor.qti.hardware.alarm-V1-ndk",
-                "libbinder",
-                "libbinder_ndk",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -14658,31 +14625,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.alarm-V1-ndk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.alarm-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.bluetooth.xpanprovider-V1-ndk",
     owner: "xiaomi",
     strip: {
@@ -15725,31 +15667,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.sensorscalibrate-V1-ndk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.vpp-V1-ndk",
     owner: "xiaomi",
     strip: {
@@ -16695,6 +16612,31 @@ prebuilt_rfsa {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.qvirt-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/product/lib64/vendor.qti.qvirt-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.qualcomm.qti.dpm.api@1.0",
     owner: "xiaomi",
     strip: {
@@ -17407,7 +17349,6 @@ cc_prebuilt_library_shared {
                 "libjpeg",
                 "libpiex",
                 "libpng",
-                "libheif",
                 "libnativewindow",
                 "libEGL",
                 "libGLESv2",
@@ -17572,6 +17513,8 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/libwfdmmsrc_system.so",
             ],
             shared_libs: [
+                "libgui_shim",
+                "libaudiobase",
                 "libbinder",
                 "libmmosal",
                 "liblog",
@@ -17689,6 +17632,7 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/libwfdservice.so",
             ],
             shared_libs: [
+                "libaudiobase",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -17704,7 +17648,7 @@ cc_prebuilt_library_shared {
                 "libaudioclient",
                 "libaudiofoundation",
                 "audioclient-types-aidl-cpp",
-                "android.media.audio.common.types-V4-cpp",
+                "android.media.audio.common.types-V5-cpp",
                 "libwfdmmsrc_system",
                 "libwfdavenhancements",
                 "libhidlbase",
@@ -19156,15 +19100,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "vendor.qti.hardware.alarm.xml",
-    owner: "xiaomi",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.alarm.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "vendor.qti.hardware.capabilityconfigstore-service.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.capabilityconfigstore-service.xml",
@@ -19309,15 +19244,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "vendor.qti.hardware.sensorscalibrate.xml",
-    owner: "xiaomi",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.sensorscalibrate.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "vendor.qti.hardware.vpp-service.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vpp-service.xml",
@@ -19396,6 +19322,15 @@ prebuilt_etc_xml {
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.qti.qvirt-service.xml",
+    owner: "xiaomi",
+    src: "proprietary/product/etc/vintf/manifest/vendor.qti.qvirt-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    product_specific: true,
 }
 
 prebuilt_etc_xml {
@@ -20062,42 +19997,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "vendor.qti.hardware.alarm-service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.qti.hardware.alarm-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libbinder",
-                "libhardware",
-                "libhidlbase",
-                "libbinder_ndk",
-                "libavservices_minijail",
-                "vendor.qti.hardware.alarm-impl",
-                "vendor.qti.hardware.alarm-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "vendor.qti.hardware.capabilityconfigstore-service",
     owner: "xiaomi",
     target: {
@@ -20255,39 +20154,6 @@ cc_prebuilt_binary {
                 "libQSEEComAPI",
                 "vendor.qti.hardware.qseecom-V1-ndk",
                 "vendor.qti.hardware.qseecom@1.0-impl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.qti.hardware.sensorscalibrate-service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libhardware",
-                "libbase",
-                "libutils",
-                "libsensorcal",
-                "libbinder_ndk",
-                "vendor.qti.hardware.sensorscalibrate-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -20915,32 +20781,6 @@ cc_prebuilt_binary {
                 "libdsutils",
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "power_off_alarm",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/power_off_alarm",
-            ],
-            shared_libs: [
-                "libc",
-                "liblog",
-                "libcutils",
-                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -22164,6 +22004,36 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.qti.qvirt-service",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/product/bin/vendor.qti.qvirt-service",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libjsoncpp",
+                "libcutils",
+                "libbinder_ndk",
+                "vendor.qti.qvirt-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    product_specific: true,
 }
 
 cc_prebuilt_binary {
